@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== FAVICON ===============-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>ZestiaTask - Corina Gorodetchi</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="assets/img/Logo.svg" alt="Logo" srcset="">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#features" class="nav__link active-link">Features</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#customers" class="nav__link">Customers</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#pricing" class="nav__link">Pricing</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <span></span>
+            </div>
+
+            <a href="#" class="button button__header">Try for free</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container">
+                <div class="home__card">
+                    <div class="card">
+                        <img src="assets/img/Spine Shadow.png" alt="" class="card__shadow">
+                        <div class="card__body">
+                            <img src="assets/img/Vector.png" alt="logo" class="card__logo">
+                            <h2 class="card__title">Remote Work <br> for Marketing Teams</h2>
+                            <p class="card__text">For a less boring lockdown life</p>
+                        </div>
+                        <img src="assets/img/Pattern.png" alt="eBook title" class="card__img">
+                    </div>
+                </div>
+
+                <div class="home__data">
+                    <h1 class="home__title">Download our <br> wonderful eBook </h1>
+                    <div class="home__author">
+                        <span>By</span>
+                        <div class="author__item">
+                            <img src="assets/img/Katia.jpg" alt="Katia" class="author__image">
+                            <span>Katia De Juan</span>
+                        </div>
+                        <div class="author__item">
+                            <img src="assets/img/Gavin.jpg" alt="Katia" class="author__image">
+                            <span>Gavin Williams</span>
+                        </div>
+                    </div>
+                    <div class="home__card--mob">
+                        <div class="card">
+                            <img src="assets/img/Spine Shadow.png" alt="" class="card__shadow">
+                            <div class="card__body">
+                                <img src="assets/img/Vector.png" alt="logo" class="card__logo">
+                                <h2 class="card__title">Remote Work <br> for Marketing Teams</h2>
+                                <p class="card__text">For a less boring lockdown life</p>
+                            </div>
+                            <img src="assets/img/Pattern.png" alt="eBook title" class="card__img">
+                        </div>
+                    </div>
+                    <p class="home__description">
+                        Learn how design engineering, an essential discipline to creating great products, brings
+                        together form and function while accelerating innovation. Written by industry leaders from
+                        Indeed, Mailchimp, The New York Times, and Minted, this book will help you connect design and
+                        engineering and work more efficiently as a team.
+                    </p>
+                    <p class="text__italic">Available in epub, PDF, and audiobook formats.</p>
+
+                    <a href="#" class="button button--open">Download eBook</a>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!--=============== FORM POPUP ===============-->
+        <div class="modal hidden" id="form">
+            <a href="#" class="button--close"></a>
+            <div class="form__container">
+                <h1 class="form__title">We need some details</h1>
+                <span class="form__subtitle">Tell us a little about yourself to download the free e-book! Don’t worry,
+                    we never share these details with anyone else.</span>
+                <form action="/" class="form">
+                    <div class="form__field form__field--50">
+                        <label for="name" class="form__label">First name</label>
+                        <input type="text" name="name" id="name" placeholder="Bob" class="form-input"
+                            onKeyup="checkform()" />
+                    </div>
+                    <div class="form__field form__field--50">
+                        <label for="surname" class="form__label">Last name</label>
+                        <input type="text" name="surname" id="surname" placeholder="Burgers" class="form-input"
+                            onKeyup="checkform()" />
+                    </div>
+                    <div class="form__field">
+                        <label for="email" class="form__label">Email address</label>
+                        <input type="email" name="email" id="email" placeholder="bob@burgers.com" class="form-input"
+                            onKeyup="checkform()" />
+                    </div>
+                    <div class="form__buttons">
+                        <button class="button button--submit">Submit</button>
+                        <span class="success__message"></span>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+        <div class="overlay hidden"></div>
+    </main>
+
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
